@@ -14,6 +14,7 @@ namespace Praktika
             InitializeComponent();
         }
 
+ Zadanie_1_2
         private void btnAW_BLEND_Click(object sender, EventArgs e)
         {
             // Скрываем окно
@@ -42,6 +43,24 @@ namespace Praktika
             this.btnAW_BLEND.Invalidate();
             this.btnHOR_AW_SLIDE.Invalidate();
             this.btnCenter_AW_SLIDE.Invalidate();
+=======
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Файлы pdf|*.pdf";
+            openFileDialog1.ShowDialog();
+            axAcroPDF1.LoadFile(openFileDialog1.FileName);
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+ Zadanie_1
         }
     }
 }
