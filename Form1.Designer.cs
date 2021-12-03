@@ -35,7 +35,10 @@ namespace Praktika
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+ Zadanie_2_2
+
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+ Zadanie_2
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +65,10 @@ namespace Praktika
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(80, 22);
             this.textBox1.TabIndex = 2;
+ Zadanie_2_2
+
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+ Zadanie_2
             // 
             // progressBar1
             // 
@@ -91,6 +97,8 @@ namespace Praktika
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+ Zadanie_2_2
+
             // backgroundWorker1
             // 
             this.backgroundWorker1.WorkerReportsProgress = true;
@@ -99,6 +107,7 @@ namespace Praktika
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
+ Zadanie_2
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -125,7 +134,10 @@ namespace Praktika
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+ Zadanie_2_2
+
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+ Zadanie_2
     }
 }
 
