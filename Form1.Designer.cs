@@ -35,12 +35,15 @@ namespace Praktika
             this.lblB = new System.Windows.Forms.Label();
             this.txbA = new System.Windows.Forms.TextBox();
             this.txbB = new System.Windows.Forms.TextBox();
+            this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.SuspendLayout();
             // 
             // btnRun
             // 
+            this.helpProvider1.SetHelpString(this.btnRun, "Sum");
             this.btnRun.Location = new System.Drawing.Point(16, 64);
             this.btnRun.Name = "btnRun";
+            this.helpProvider1.SetShowHelp(this.btnRun, true);
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "Сумма";
@@ -49,8 +52,10 @@ namespace Praktika
             // 
             // btnWork
             // 
+            this.helpProvider1.SetHelpString(this.btnWork, "Start work");
             this.btnWork.Location = new System.Drawing.Point(120, 128);
             this.btnWork.Name = "btnWork";
+            this.helpProvider1.SetShowHelp(this.btnWork, true);
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 1;
             this.btnWork.Text = "Работа";
@@ -77,15 +82,19 @@ namespace Praktika
             // 
             // txbA
             // 
+            this.helpProvider1.SetHelpString(this.txbA, "For input integer A");
             this.txbA.Location = new System.Drawing.Point(88, 24);
             this.txbA.Name = "txbA";
+            this.helpProvider1.SetShowHelp(this.txbA, true);
             this.txbA.Size = new System.Drawing.Size(100, 22);
             this.txbA.TabIndex = 4;
             // 
             // txbB
             // 
+            this.helpProvider1.SetHelpString(this.txbB, "For input integer B");
             this.txbB.Location = new System.Drawing.Point(296, 24);
             this.txbB.Name = "txbB";
+            this.helpProvider1.SetShowHelp(this.txbB, true);
             this.txbB.Size = new System.Drawing.Size(100, 22);
             this.txbB.TabIndex = 5;
             // 
@@ -100,6 +109,10 @@ namespace Praktika
             this.Controls.Add(this.lblA);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Ассинхронное выполнение";
             this.ResumeLayout(false);
@@ -115,6 +128,7 @@ namespace Praktika
         private System.Windows.Forms.Label lblB;
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.TextBox txbB;
+        private System.Windows.Forms.HelpProvider helpProvider1;
     }
 }
 
