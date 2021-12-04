@@ -36,13 +36,23 @@ namespace Praktika
             this.txbA = new System.Windows.Forms.TextBox();
             this.txbB = new System.Windows.Forms.TextBox();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
+ Zadanie_3_2
             this.btnHelp = new System.Windows.Forms.Button();
+
+ Zadanie_3
             this.SuspendLayout();
             // 
             // btnRun
             // 
+ Zadanie_3_2
             this.btnRun.Location = new System.Drawing.Point(16, 64);
             this.btnRun.Name = "btnRun";
+
+            this.helpProvider1.SetHelpString(this.btnRun, "Sum");
+            this.btnRun.Location = new System.Drawing.Point(16, 64);
+            this.btnRun.Name = "btnRun";
+            this.helpProvider1.SetShowHelp(this.btnRun, true);
+ Zadanie_3
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 0;
             this.btnRun.Text = "Сумма";
@@ -51,8 +61,15 @@ namespace Praktika
             // 
             // btnWork
             // 
+ Zadanie_3_2
             this.btnWork.Location = new System.Drawing.Point(120, 128);
             this.btnWork.Name = "btnWork";
+
+            this.helpProvider1.SetHelpString(this.btnWork, "Start work");
+            this.btnWork.Location = new System.Drawing.Point(120, 128);
+            this.btnWork.Name = "btnWork";
+            this.helpProvider1.SetShowHelp(this.btnWork, true);
+ Zadanie_3
             this.btnWork.Size = new System.Drawing.Size(75, 23);
             this.btnWork.TabIndex = 1;
             this.btnWork.Text = "Работа";
@@ -79,13 +96,21 @@ namespace Praktika
             // 
             // txbA
             // 
+ Zadanie_3_2
             this.txbA.Location = new System.Drawing.Point(88, 24);
             this.txbA.Name = "txbA";
+
+            this.helpProvider1.SetHelpString(this.txbA, "For input integer A");
+            this.txbA.Location = new System.Drawing.Point(88, 24);
+            this.txbA.Name = "txbA";
+            this.helpProvider1.SetShowHelp(this.txbA, true);
+ Zadanie_3
             this.txbA.Size = new System.Drawing.Size(100, 22);
             this.txbA.TabIndex = 4;
             // 
             // txbB
             // 
+ Zadanie_3_2
             this.txbB.Location = new System.Drawing.Point(296, 24);
             this.txbB.Name = "txbB";
             this.txbB.Size = new System.Drawing.Size(100, 22);
@@ -105,20 +130,41 @@ namespace Praktika
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+
+            this.helpProvider1.SetHelpString(this.txbB, "For input integer B");
+            this.txbB.Location = new System.Drawing.Point(296, 24);
+            this.txbB.Name = "txbB";
+            this.helpProvider1.SetShowHelp(this.txbB, true);
+            this.txbB.Size = new System.Drawing.Size(100, 22);
+            this.txbB.TabIndex = 5;
+            // 
+ Zadanie_3
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(407, 153);
+ Zadanie_3_2
             this.Controls.Add(this.btnHelp);
+
+ Zadanie_3
             this.Controls.Add(this.txbB);
             this.Controls.Add(this.txbA);
             this.Controls.Add(this.lblB);
             this.Controls.Add(this.lblA);
             this.Controls.Add(this.btnWork);
             this.Controls.Add(this.btnRun);
+ Zadanie_3_2
             this.Name = "Form1";
             this.Text = "Accинхронное выполнение";
+
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.HelpButton = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "Ассинхронное выполнение";
+ Zadanie_3
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +179,10 @@ namespace Praktika
         private System.Windows.Forms.TextBox txbA;
         private System.Windows.Forms.TextBox txbB;
         private System.Windows.Forms.HelpProvider helpProvider1;
+ Zadanie_3_2
         private System.Windows.Forms.Button btnHelp;
+
+ Zadanie_3
     }
 }
 
