@@ -57,6 +57,8 @@ namespace Praktika
         {
             MessageBox.Show("Работа кипит!!!");
         }
+ Zadanie_3_3
+
  Zadanie_3_2
 
         private void btnHelp_Click(object sender, EventArgs e)
@@ -65,6 +67,7 @@ namespace Praktika
 
         }
 
+ Zadanie_3
  Zadanie_3
     }
 }
