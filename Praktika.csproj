@@ -54,12 +54,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+ Zadanie_3
+
  Zadanie_2
 
  Zadanie_1_2
     <Compile Include="WinAPIClass.cs" />
 
  Zadanie_1
+ master
  master
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

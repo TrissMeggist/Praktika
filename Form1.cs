@@ -14,8 +14,11 @@ namespace Praktika
             InitializeComponent();
         }
 
+ Zadanie_3
+
  Zadanie_2
  Zadanie_2_3
+ master
         private delegate int AsyncSumm(int a, int b);
         private int Summ(int a, int b)
         {
@@ -55,6 +58,21 @@ namespace Praktika
         private void btnWork_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Работа кипит!!!");
+ Zadanie_3
+        }
+ Zadanie_3_3
+
+ Zadanie_3_2
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, helpProvider1.HelpNamespace);
+
+        }
+
+ Zadanie_3
+ Zadanie_3
+
 
  Zadanie_2_2
         bool Cancel;
@@ -212,5 +230,6 @@ namespace Praktika
  Zadanie_1
  master
         }
+ master
     }
 }
