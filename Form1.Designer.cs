@@ -61,14 +61,14 @@ namespace Praktika
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(0, 366);
+            this.listBox1.Location = new System.Drawing.Point(0, 169);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(800, 84);
+            this.listBox1.Size = new System.Drawing.Size(452, 84);
             this.listBox1.TabIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(285, 12);
+            this.button2.Location = new System.Drawing.Point(12, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(235, 23);
             this.button2.TabIndex = 2;
@@ -80,7 +80,7 @@ namespace Praktika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(452, 253);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button1);
