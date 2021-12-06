@@ -17,6 +17,7 @@ namespace Praktika
             InitializeComponent();
         }
 
+ Zadanie_4_4
         private void сотрудникиBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -52,5 +53,21 @@ namespace Praktika
         {
             sotrBindingSource.MoveNext();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "конфетная_фабрикаDataSet.Товары". При необходимости она может быть перемещена или удалена.
+            this.товарыTableAdapter.Fill(this.конфетная_фабрикаDataSet.Товары);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "конфетная_фабрикаDataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
+            this.сотрудникиTableAdapter.Fill(this.конфетная_фабрикаDataSet.Сотрудники);
+
+        }
+
+    
+
+       
+
+        
+ Zadanie_4
     }
 }
