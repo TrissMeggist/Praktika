@@ -22,14 +22,25 @@ namespace Praktika
 
         }
 
+        DataView ЗаказчикиDataView;
+
         private void button1_Click(object sender, EventArgs e)
         {
-            oleDbDataAdapter1.Fill(конфетная_фабрикаDataSet1.Заказчики);
+            заказчикиTableAdapter1.Fill(конфетная_фабрикаDataSet1.Заказчики);
+            ЗаказчикиDataView = new DataView(конфетная_фабрикаDataSet1.Заказчики);
+            dataGridView1.DataSource = ЗаказчикиDataView;
+            ЗаказчикиDataView.Sort = "Фамилия";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+            private void button2_Click(object sender, EventArgs e)
         {
             oleDbDataAdapter1.Update(конфетная_фабрикаDataSet1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ЗаказчикиDataView.Sort = SortTextBox.Text;
+            ЗаказчикиDataView.RowFilter = FilterTextBox.Text;
         }
     }
 }
