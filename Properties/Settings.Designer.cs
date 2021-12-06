@@ -26,8 +26,13 @@ namespace Praktika.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+ Zadanie_4_4
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"|DataDirectory|\\bin\\Debug\\Конфетная" +
+            " фабрика.mdb\"")]
+
         [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"|DataDirectory|\\Конфетная фабрика.m" +
             "db\"")]
+ Zadanie_4
         public string Конфетная_фабрикаConnectionString {
             get {
                 return ((string)(this["Конфетная_фабрикаConnectionString"]));

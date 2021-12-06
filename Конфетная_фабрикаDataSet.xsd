@@ -7,6 +7,8 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Конфетная_фабрикаConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Конфетная_фабрикаConnectionString (Settings)" PropertyReference="ApplicationSettings.Praktika.Properties.Settings.GlobalReference.Default.Конфетная_фабрикаConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
+ Zadanie_4_4
+
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказчикиTableAdapter" GeneratorDataComponentClassName="ЗаказчикиTableAdapter" Name="Заказчики" UserDataComponentName="ЗаказчикиTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Конфетная_фабрикаConnectionString (Settings)" DbObjectName="Заказчики" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -163,6 +165,7 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+ Zadanie_4
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="СотрудникиTableAdapter" GeneratorDataComponentClassName="СотрудникиTableAdapter" Name="Сотрудники" UserDataComponentName="СотрудникиTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Конфетная_фабрикаConnectionString (Settings)" DbObjectName="Сотрудники" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -223,6 +226,8 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+ Zadanie_4_4
+
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ТоварыTableAdapter" GeneratorDataComponentClassName="ТоварыTableAdapter" Name="Товары" UserDataComponentName="ТоварыTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="Конфетная_фабрикаConnectionString (Settings)" DbObjectName="Товары" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -283,6 +288,7 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+ Zadanie_4
         </Tables>
         <Sources />
       </DataSource>
@@ -291,6 +297,8 @@
   <xs:element name="Конфетная_фабрикаDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Конфетная_фабрикаDataSet" msprop:Generator_UserDSName="Конфетная_фабрикаDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
+ Zadanie_4_4
+
         <xs:element name="Заказчики" msprop:Generator_TableClassName="ЗаказчикиDataTable" msprop:Generator_TableVarName="tableЗаказчики" msprop:Generator_TablePropName="Заказчики" msprop:Generator_RowDeletingName="ЗаказчикиRowDeleting" msprop:Generator_RowChangingName="ЗаказчикиRowChanging" msprop:Generator_RowEvHandlerName="ЗаказчикиRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказчикиRowDeleted" msprop:Generator_UserTableName="Заказчики" msprop:Generator_RowChangedName="ЗаказчикиRowChanged" msprop:Generator_RowEvArgName="ЗаказчикиRowChangeEvent" msprop:Generator_RowClassName="ЗаказчикиRow">
           <xs:complexType>
             <xs:sequence>
@@ -384,6 +392,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+ Zadanie_4
         <xs:element name="Сотрудники" msprop:Generator_TableClassName="СотрудникиDataTable" msprop:Generator_TableVarName="tableСотрудники" msprop:Generator_TablePropName="Сотрудники" msprop:Generator_RowDeletingName="СотрудникиRowDeleting" msprop:Generator_RowChangingName="СотрудникиRowChanging" msprop:Generator_RowEvHandlerName="СотрудникиRowChangeEventHandler" msprop:Generator_RowDeletedName="СотрудникиRowDeleted" msprop:Generator_UserTableName="Сотрудники" msprop:Generator_RowChangedName="СотрудникиRowChanged" msprop:Generator_RowEvArgName="СотрудникиRowChangeEvent" msprop:Generator_RowClassName="СотрудникиRow">
           <xs:complexType>
             <xs:sequence>
@@ -412,6 +421,15 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+ Zadanie_4_4
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Сотрудники" />
+      <xs:field xpath="mstns:Код" />
+    </xs:unique>
+  </xs:element>
+
         <xs:element name="Товары" msprop:Generator_TableClassName="ТоварыDataTable" msprop:Generator_TableVarName="tableТовары" msprop:Generator_TablePropName="Товары" msprop:Generator_RowDeletingName="ТоварыRowDeleting" msprop:Generator_RowChangingName="ТоварыRowChanging" msprop:Generator_RowEvHandlerName="ТоварыRowChangeEventHandler" msprop:Generator_RowDeletedName="ТоварыRowDeleted" msprop:Generator_UserTableName="Товары" msprop:Generator_RowChangedName="ТоварыRowChanged" msprop:Generator_RowEvArgName="ТоварыRowChangeEvent" msprop:Generator_RowClassName="ТоварыRow">
           <xs:complexType>
             <xs:sequence>
@@ -458,4 +476,5 @@
       <msdata:Relationship name="ПоставщикиТовары" msdata:parent="Поставщики" msdata:child="Товары" msdata:parentkey="Код_x0020_поставщика" msdata:childkey="Код_x0020_поставщика" msprop:Generator_UserChildTable="Товары" msprop:Generator_ChildPropName="GetТоварыRows" msprop:Generator_UserRelationName="ПоставщикиТовары" msprop:Generator_ParentPropName="ПоставщикиRow" msprop:Generator_RelationVarName="relationПоставщикиТовары" msprop:Generator_UserParentTable="Поставщики" />
     </xs:appinfo>
   </xs:annotation>
+ Zadanie_4
 </xs:schema>
